@@ -1,0 +1,390 @@
+
+  .delivery{
+      padding: 0 10px
+  }
+  
+ 
+  .wk-linktext {
+      text-decoration: underline;
+  }
+  .wk-aftercontent {
+      clear: both;
+  }
+    .wk-blogposttip4 {
+    clear: both;
+  }
+  .template-cart a.cart__remove {
+      font-weight: bold;
+  }
+
+
+
+
+  .info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto';
+      margin: 10% 0%;
+  }
+  
+  .info:first-child{
+  margin:0%
+  }
+  .template-product .product-description .delivery h4 {
+      font-size: 14px;
+    font-weight:bold;
+  }
+  
+  .info p{
+      font-weight: 300;
+  }
+  .info h4{
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 1px;
+  }
+  
+  .template-product .product-medias__thumbnails img.product-medias__thumbnail__image.product-medias__thumbnail--video {
+      max-height: 122px !important;
+  }
+  @media screen and (max-width: 900px){
+      .container{
+          width: 100%;
+      }
+      .info{
+          margin: 5% 0%;
+      }
+      .image-container{
+          display: flex;
+      }
+  
+      .image-container img{
+          width: 70px;
+          height: 70px;
+          margin: 10px;
+          border-radius: 5px;
+      }
+      .section{
+          width: 100vw;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      section{
+          width: 100%;
+      }
+      .infolist{
+          width: 100%;
+      }
+      iframe{
+          width: 300px;
+          height: 300px;
+      }
+  
+      .info p{
+          text-align: center;
+      }
+  }
+  
+  .mega-menu-wrapper .dropdown-submenu.large--one-fifth{
+  width:16.5%;
+  
+  }
+  
+  /* Flagship Code */
+  
+  .flagship_stores_container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+        
+      
+  }
+  
+  .flagship_box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 33%;
+    
+  }
+  
+  .flagship_box h2{
+      font-weight: 800;
+  }
+  
+  .flagship_box .flagship_box_image{
+      width: 400px;
+  }
+  
+  .flagship_box .flagship_box_div{
+      display: flex;
+      width: 60%;
+        justify-content:center;
+    
+  }
+  
+  .flagship_box .flagship_box_div img{
+      width: 40px;
+      padding: 10px 2px;
+  }
+  
+  .flagship_box .flagship_box_div span{
+      text-align: center;
+      padding: 10px 5px;
+      font-weight: 500;
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 1200px){
+  
+      .flagship_stores_container{
+          flex-direction: column!important;
+          align-items: center;
+        display:hidden;
+      }
+      .flagship_box{
+          width: 100%;
+          margin: 15px 0px;
+      }
+  
+      .flagship_box .flagship_stores_div{
+          width: 100%;
+      }
+  }
+  
+  
+  /* Announcement Bar  */
+  .announcement-bar{
+  padding: 0px 0px!important;
+    
+  }
+  
+  .announcement-bar #sharing li{
+  
+  margin-bottom: -0.75em!important;
+  }
+  
+  /* SIS PAGE CSS */
+  
+  
+  }
+  .map-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .block-container .banner{
+      width: 98.9vw;
+  }
+  
+  .block-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        margin:20px auto;
+    
+  }
+  
+  .block-container:nth-child(2){
+      /* padding: 50px; */
+      width: 100%;
+      display: grid;
+      grid-column-gap: 50px;
+  
+      grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    }
+  
+  .card{
+      height: 300px;
+      margin: 10px 0px;
+      padding: 60px 40px;
+      background-color: #f2f2f2;
+  }
+  
+  .card h2{
+      display: inline-block;
+      font-size:26px;
+      font-weight: 400;
+      padding-bottom: 10px;
+      border-bottom: 0px solid rgb(8, 8, 8);
+      margin-bottom: 5px;
+  }
+  
+  .card p{
+      color: rgb(102, 102, 102);
+  }
+  
+  .card p span:nth-child(1){
+      font-weight: 600;
+  }
+  
+  
+  
+  .card  .map-link{
+      display: flex;
+      justify-content: left;
+  }
+  
+  @media only screen and (max-width: 1200px){
+      
+  
+      .card .map-link{
+          justify-content: left;
+      }
+  
+  }
+  
+  /* Code End Here */
+  
+  /* Media pae code start Here */
+  
+  
+  .blog-card{
+      display: flex;
+      width: 100%;
+      
+    background: #f2f2f2;
+    padding:20px;
+  }
+  
+  .blog-card .blog-img{
+      width: 60%;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  
+  .blog-card .blog-img img{
+      border-radius: 5px;
+      width: 100%;
+  }
+  
+  .blog-card .blog-info{
+       flex-grow: 1;
+      padding: 5px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      text-align: left;
+  }
+  
+  .blog-card .blog-info p{
+      flex-grow: 1;
+    
+  }
+  
+  .blog-card .blog-info .link{
+  
+      display: flex;
+      align-items: flex-center;
+      justify-content: flex-start;
+      font-size: 0.9rem;
+  }
+  
+  
+  
+  @media only screen and (max-width: 1200px){
+      .blog-card{
+          flex-direction: column;
+      }
+  
+      .blog-card .blog-img{
+          width: 100%;
+          padding: 0;
+      }
+  
+      .blog-card .blog-img img{
+          border-radius: 10px;
+      }
+  }
+  
+  
+  
+  /* Career page css */
+  
+  
+  .career_section_cards{
+      display:flex;
+  }
+  
+  .career_section_cards .card{
+      width:33.33%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      margin-right: 15px;
+  }
+  
+  .career_section_cards .card a{
+      padding: 15px 30px;
+      margin-bottom: 20px;
+      background-color: #800080;
+      color: white;
+  }
+  
+  .career_section_cards .card h4{
+      margin: 20px 0px 2px 0px;
+  }
+  
+  /* Media Query */
+  @media screen and (max-width: 768px) {
+      .career_section_cards .card{
+          width:100%;
+          margin: 10px 0px;
+      }
+  
+      .career_section_cards{
+          flex-direction: column;
+      }
+  
+  }
+  
+ 
+  
+  @media only screen and (min-width: 768px) {
+     .wrapper {
+      padding: 4px 19px;
+  } 
+    
+    .product-form-vue{
+    padding-left:60px;
+      padding-right:60px;
+    }
+  
+  }
+  
+  .site-header .site-header__wrapper>* {
+      margin: 0 7px;
+  }
+  
+  .active-facets {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: -1rem;
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      margin-top: 0;
+  }
+  .collection-filters__topbar .active-facets-desktop {
+       margin-top: 0.1rem; 
+  }
+  

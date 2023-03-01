@@ -1,0 +1,105 @@
+<div class="our-stores-section-wrapper">
+{%- for block in section.blocks -%}
+
+    <div class="store-main-wrapper">
+      <a class="store-wrapper" href="{{ block.settings.store_location }}">
+        <div class="store_image">
+          {% render 'responsive-image' with block.settings.store_image %}
+        </div>
+        <div class="store_location">
+          <a class="go_to">
+              {{ block.settings.store_name }}
+          </a>
+        </div>
+      </a>
+    </div>
+
+{%- endfor -%}
+</div>
+<style>
+  .store_image > .responsive-image-wrapper > img{
+    width:100%;
+    height:auto;
+  }
+  @media screen and (max-width: 768px){
+    
+    .store-main-wrapper{
+      width:100%
+    }
+
+  }
+  @media screen and (min-width: 768px){
+
+    .our-stores-section-wrapper{
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .store-main-wrapper{
+      width:33%
+    }
+
+  }
+  .store_location{
+    position: relative;
+    top: -100px;
+    left: 40%;
+    width: fit-content;
+  }
+  .our-stores-section-wrapper{
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+  }
+</style>
+{% schema %}
+{
+  "name": "Our Stores",
+  "class": "section",
+  "settings": [ ],
+    "blocks":[
+    {
+        "type":"store",
+        "name":"store",
+        "settings": [    
+            {
+              "id": "store_image",
+              "type": "image_picker",
+              "label": "Store Image",
+              "info": "Store Image"
+            },
+            {
+              "type": "text",
+              "id": "store_name",
+              "label": "Store Name",
+              "default": "Store Name"
+            },
+            {
+                "type": "text",
+                "id": "store_location",
+                "label": "Store Location",
+                "default": "Store Location"
+            } 
+      ]
+    }
+],
+ 
+  "presets": [
+    {
+        "name": "Our Stores",
+        "blocks": [
+          {
+              "type": "store"
+          },
+          {
+              "type": "store"
+          },
+          {
+              "type": "store"
+          }
+        ]
+      }
+  ]
+}
+{% endschema %}

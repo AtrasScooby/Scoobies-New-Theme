@@ -1,0 +1,214 @@
+
+<div class="">
+	<div class="section-heading">
+        <h2 class="section-heading-h2">
+            {{ section.settings.main-heading }}
+        </h2>
+    </div>
+	<div class="tabbed">
+        {%- for block in section.blocks -%}
+            {% if block.settings.active_tab %}
+
+            <input type="radio" id="{{ block.id }}" name="css-tabs" checked>
+
+            {% else %}
+
+            <input type="radio" id="{{ block.id }}" name="css-tabs">
+
+
+            {% endif %}
+            
+		{% comment %} <input type="radio" id="{{ block.id }}" name="css-tabs">
+		<input type="radio" id="{{ block.id }}" name="css-tabs"> {% endcomment %}
+        {%- endfor -%}
+		<ul class="tabs">
+
+        {%- for block in section.blocks -%}
+			<li class="tab"><label for="{{ block.id }}">{{ block.settings.heading }}</label></li>
+			{% comment %} <li class="tab"><label for="{{ block.id }}">Zombie lipsum</label></li>
+			<li class="tab"><label for="{{ block.id }}">New age bullshit</label></li> {% endcomment %}
+
+        {%- endfor -%}
+
+		</ul>
+        {%- for block in section.blocks -%}
+
+            <div class="tab-content tab-{{ block.id }}">
+                <ul id="Slider-{{ block.id }}" class="grid product-grid contains-card contains-card--product grid--4-col-desktop grid--2-col-tablet-down" role="list" aria-label="{{ 'general.slider.name' | t }}">
+                {%- for product in block.settings.collection.products limit: 4 -%}
+                    <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item">
+                      {% render 'card-product',
+                        card_product: product,
+                        section_id: block.id
+                      %}
+                    </li>
+                {%- endfor -%}
+            </div>
+
+        {%- endfor -%}
+	</div>
+
+</div>
+<style>
+    .page-content {
+        max-width: 700px; 
+        margin: 32px auto; 
+        padding: 32px; 
+        background: #fff;
+    }
+    a {
+        color: #21D4FD; 
+        transition: all 0.3s;
+    }
+    a:hover {
+        color: #B721FF;
+    }
+    
+    .tabbed {
+        overflow-x: hidden; /* so we could easily hide the radio inputs */
+        margin: 32px 0;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .tabbed [type="radio"] {
+        /* hiding the inputs */
+        display: none;
+    }
+    
+    .tabs {
+        display: flex;
+        align-items: stretch;
+        list-style: none;
+        padding: 0;
+        justify-content:center;
+        {% comment %} border-bottom: 1px solid #ccc; {% endcomment %}
+    }
+    .tab > label {
+        display: block;
+        margin-bottom: -1px;
+        padding: 2px 5px;
+        {% comment %} border: 1px solid #ccc; {% endcomment %}
+        {% comment %} background: #eee; {% endcomment %}
+        color: #666;
+        font-size: 14px; 
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;	
+        transition: all 0.3s;
+    }
+    .tab:hover label {
+        border-top-color: #333;
+        color: #333;
+    }
+    
+    .tab-content {
+        display: none;
+        color: #777;
+        {% comment %} padding: 0 10%; {% endcomment %}
+    }
+    
+    /* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+    .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+    .tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+    .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+    .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+    .tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
+        {% comment %} border-bottom-color: #fff;
+        border-top-color: #B721FF;
+        background: #fff;
+        color: #222; {% endcomment %}
+        color: #810180;
+        background: none;
+        border: none;
+        font-size: 18px;
+        border-bottom: 4px solid #4b014a;
+        padding: 5px 15px;
+    }
+    
+    .tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+    .tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+    .tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+    .tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+        display: block;
+    }
+
+    .section-heading-h2{
+        text-align:center;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Homepage Products",
+  "class": "section page-width",
+  "settings": [
+    {
+        "type": "range",
+        "id": "no-of-products",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "items",
+        "default": 4
+    },
+    {
+        "type": "color",
+        "id": "text_color",
+        "label": "Tab Heading Text Color",
+        "default": "#323232"
+   },
+   {
+    "type": "text",
+    "id": "main-heading",
+    "label": "Heading",
+    "default": "Heading"
+    }
+],
+  "blocks": [
+    {
+        "type": "Tab",
+        "name": "Tab",
+        "settings": [
+            {
+                "label": {
+                    "en": "Collection",
+                    "de": "Kollektion",
+                    "es": "Colección",
+                    "fr": "Collection",
+                    "pt-PT": "Coleção"
+                },
+                "id": "collection",
+                "type": "collection"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Heading"
+            },
+            {
+                "type": "checkbox",
+                "id": "active_tab",
+                "label": "Active Tab",
+                "default": false
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage Products",
+      "blocks": [
+        {
+            "type": "Tab"
+        },
+        {
+            "type": "Tab"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

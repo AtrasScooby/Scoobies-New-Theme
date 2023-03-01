@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page-return-gift",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/Return_Gifts-2_1.webp",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "menu": "return-gifts-menu"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
