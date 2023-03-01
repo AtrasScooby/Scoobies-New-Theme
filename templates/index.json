@@ -3,45 +3,16 @@
     "be8a5aa8-65ee-4faa-ac88-1a81709b614b": {
       "type": "slideshow",
       "blocks": {
-        "326cbbd4-39a3-45f1-b93b-15479f124167": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Updated_Banner_Size1-2.webp",
-            "heading": "DIY DOODLE",
-            "heading_size": "h0",
-            "subheading": "T - SHIRT",
-            "button_label": "SHOP NOW",
-            "link": "shopify:\/\/collections\/diy-t-shirt",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center",
-            "header_font": "anonymous_pro_n4",
-            "header_color": "#121212",
-            "text_color": "#121212",
-            "button_bg": "#121212",
-            "button_text": "#ffffff",
-            "text_align_cont": "center",
-            "text_align_cont_vertical": "center",
-            "header_text_size": 36,
-            "header_text_size_mob": 61,
-            "sub-head-size-mob": 24,
-            "sub-head-size": 42
-          }
-        },
         "2d79bf59-b783-4657-b947-3a4d959ffc45": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Updated_Banner_Size-4_2e78a2d4-cac1-4cde-8a95-d48205f10718.webp",
+            "image": "shopify:\/\/shop_images\/Updated_Banner_Size-3_415c3cf3-8ff3-476f-8b7a-80b860a17272.webp",
             "heading": "Scoo-Magnetic",
             "heading_size": "h0",
             "subheading": "Car & Road Pack",
-            "button_label": "Shop Now",
-            "link": "shopify:\/\/products\/scoo-magnetic-car-road-pack",
-            "button_style_secondary": true,
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
@@ -54,20 +25,69 @@
             "button_bg": "#121212",
             "button_text": "#cdd6dc",
             "text_align_cont": "flex-end",
-            "text_align_cont_vertical": "baseline",
-            "header_text_size": 44,
-            "header_text_size_mob": 61,
-            "sub-head-size-mob": 21,
-            "sub-head-size": 38
+            "header_text_size": 30,
+            "header_text_size_mob": 61
+          }
+        },
+        "326cbbd4-39a3-45f1-b93b-15479f124167": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Updated_Banner_Size-2_82eba250-99d7-44e9-bebc-3b57c30fca63.webp",
+            "heading": "DIY DOODLE",
+            "heading_size": "h0",
+            "subheading": "T - SHIRT",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/diy-t-shirt",
+            "button_style_secondary": false,
+            "box_align": "top-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "header_font": "anonymous_pro_n4",
+            "header_color": "#e2ff2e",
+            "text_color": "#90fb51",
+            "button_bg": "#121212",
+            "button_text": "#ffffff",
+            "text_align_cont": "flex-end",
+            "header_text_size": 28,
+            "header_text_size_mob": 61
+          }
+        },
+        "d76d8988-99d2-4c58-8d28-99c37876ceef": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/new_banners-1_bd664fba-e83b-4b8c-be87-3093f4fc669f.webp",
+            "heading": "TODDLER  BAGS",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/toddler-bags",
+            "button_style_secondary": true,
+            "box_align": "top-right",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "header_font": "dosis_n4",
+            "header_color": "#be08c1",
+            "text_color": "#f247f5",
+            "button_bg": "#be08c1",
+            "button_text": "#ffffff",
+            "text_align_cont": "flex-end",
+            "header_text_size": 30,
+            "header_text_size_mob": 61
           }
         },
         "edf1f234-4e85-4760-a6e6-a1f204bdfd19": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Updated_Banner_Size-3_1.webp",
+            "image": "shopify:\/\/shop_images\/48.jpg",
             "heading": "Scrummy Lunchbox",
             "heading_size": "h0",
-            "subheading": "Happy Launching!",
+            "subheading": "",
             "button_label": "Shop Now",
             "link": "shopify:\/\/collections\/scrummy-lunchbox",
             "button_style_secondary": true,
@@ -79,44 +99,12 @@
             "text_alignment_mobile": "center",
             "header_font": "archivo_narrow_n4",
             "header_color": "#121212",
-            "text_color": "#121212",
+            "text_color": "#1878b9",
             "button_bg": "#040404",
             "button_text": "#ffffff",
             "text_align_cont": "center",
-            "text_align_cont_vertical": "center",
-            "header_text_size": 36,
-            "header_text_size_mob": 50,
-            "sub-head-size-mob": 26,
-            "sub-head-size": 30
-          }
-        },
-        "d76d8988-99d2-4c58-8d28-99c37876ceef": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Updated_Banner_Size1-1.webp",
-            "heading": "TODDLER  BAGS",
-            "heading_size": "h0",
-            "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "shopify:\/\/collections\/toddler-bags",
-            "button_style_secondary": true,
-            "box_align": "top-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center",
-            "header_font": "dosis_n4",
-            "header_color": "#be08c1",
-            "text_color": "#f247f5",
-            "button_bg": "#be08c1",
-            "button_text": "#ffffff",
-            "text_align_cont": "flex-end",
-            "text_align_cont_vertical": "baseline",
             "header_text_size": 30,
-            "header_text_size_mob": 61,
-            "sub-head-size-mob": 30,
-            "sub-head-size": 30
+            "header_text_size_mob": 61
           }
         },
         "template--16009016180922__be8a5aa8-65ee-4faa-ac88-1a81709b614b-1672802361e36c26d3-0": {
@@ -142,19 +130,16 @@
             "button_bg": "#121212",
             "button_text": "#1878b9",
             "text_align_cont": "center",
-            "text_align_cont_vertical": "center",
             "header_text_size": 30,
-            "header_text_size_mob": 30,
-            "sub-head-size-mob": 30,
-            "sub-head-size": 30
+            "header_text_size_mob": 30
           }
         }
       },
       "block_order": [
-        "326cbbd4-39a3-45f1-b93b-15479f124167",
         "2d79bf59-b783-4657-b947-3a4d959ffc45",
-        "edf1f234-4e85-4760-a6e6-a1f204bdfd19",
+        "326cbbd4-39a3-45f1-b93b-15479f124167",
         "d76d8988-99d2-4c58-8d28-99c37876ceef",
+        "edf1f234-4e85-4760-a6e6-a1f204bdfd19",
         "template--16009016180922__be8a5aa8-65ee-4faa-ac88-1a81709b614b-1672802361e36c26d3-0"
       ],
       "settings": {
@@ -242,15 +227,15 @@
             "collection": "magnetic-toys-range",
             "png_icon": "shopify:\/\/shop_images\/Magnetic_1_f31a72a8-6950-4025-8055-b21618e409d9.png",
             "heading": "Magnetic Tiles",
-            "head-size": 29,
-            "head_text_color": "#121212",
+            "head-size": 21,
+            "head_text_color": "#ffffff",
             "subheading": "",
             "sub-size": 15,
             "sub_text_color": "#ffffff",
             "btn-text": "Shop now",
             "background_color1": "#92bef8",
             "background_color2": "#ffa0f5",
-            "text_color": "#121212",
+            "text_color": "#ffffff",
             "btn_bg_color": "#323232",
             "btn_text_color": "#ffffff"
           }
@@ -261,8 +246,8 @@
             "collection": "back-to-school",
             "png_icon": "shopify:\/\/shop_images\/BTS_SAle_2b176020-9423-4a76-a22b-42eab33b131b.png",
             "heading": "Back to School",
-            "head-size": 29,
-            "head_text_color": "#121212",
+            "head-size": 22,
+            "head_text_color": "#ffffff",
             "subheading": "",
             "sub-size": 15,
             "sub_text_color": "#ffffff",
@@ -339,7 +324,7 @@
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
@@ -355,31 +340,22 @@
         "collection": "gifts-bundles",
         "png_icon": "shopify:\/\/shop_images\/gift.png",
         "heading": "Return Gift",
-        "head-size": 61,
-        "head-size-mob": 30,
-        "header_font": "assistant_n4",
+        "head-size": 29,
         "head-margin": 10,
         "head_text_color": "#323232",
-        "subheading": "Turn into Memories for little he , she & me",
-        "sub-size": 30,
-        "sub-size-mob": 15,
+        "subheading": "",
+        "sub-size": 15,
         "sub-margin": 10,
         "sub_text_color": "#323232",
         "toptext": "",
-        "top-size": 21,
+        "top-size": 15,
         "top-margin": 10,
         "top_text_color": "#323232",
         "btn-text": "Shop now",
-        "background_color": "#fafafa",
+        "background_color": "#f8e7f9",
         "text_color": "#ffffff",
         "btn_bg_color": "#000000",
-        "btn_text_color": "#ffffff"
-      }
-    },
-    "16768865603482c658": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
+        "btn_text_color": "#323232"
       }
     },
     "ed1c61fc-2b57-4d30-93ac-41b8b63d4f93": {
@@ -399,41 +375,19 @@
         "padding_bottom": 36
       }
     },
-    "89b3b3ee-254b-441c-bf6c-5f8a3b2094ad": {
-      "type": "our-stores",
-      "disabled": true,
-      "blocks": {
-        "template--16033235828922__89b3b3ee-254b-441c-bf6c-5f8a3b2094ad-16758365994c09bcb8-0": {
-          "type": "store",
-          "settings": {
-            "store_image": "shopify:\/\/shop_images\/SO5.png",
-            "store_name": "Store Name",
-            "store_location": "Store Location"
-          }
-        },
-        "template--16033235828922__89b3b3ee-254b-441c-bf6c-5f8a3b2094ad-16758365994c09bcb8-1": {
-          "type": "store",
-          "settings": {
-            "store_image": "shopify:\/\/shop_images\/Sepcial_offer.png",
-            "store_name": "Store Name",
-            "store_location": "Store Location"
-          }
-        },
-        "template--16033235828922__89b3b3ee-254b-441c-bf6c-5f8a3b2094ad-16758365994c09bcb8-2": {
-          "type": "store",
-          "settings": {
-            "store_image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-06_at_12.19.21_PM.jpg",
-            "store_name": "Store Name",
-            "store_location": "Store Location"
-          }
-        }
-      },
-      "block_order": [
-        "template--16033235828922__89b3b3ee-254b-441c-bf6c-5f8a3b2094ad-16758365994c09bcb8-0",
-        "template--16033235828922__89b3b3ee-254b-441c-bf6c-5f8a3b2094ad-16758365994c09bcb8-1",
-        "template--16033235828922__89b3b3ee-254b-441c-bf6c-5f8a3b2094ad-16758365994c09bcb8-2"
-      ],
-      "settings": {}
+    "8ff49248-d52f-4984-baf4-239fc639ff4a": {
+      "type": "peek-a-scoob",
+      "settings": {
+        "collection": "",
+        "heading": "Heading",
+        "subheading": "Subheading",
+        "toptext": "Top Text",
+        "btn-text": "Shop now",
+        "background_color": "#f9fafb",
+        "text_color": "#ffffff",
+        "btn_bg_color": "#323232",
+        "btn_text_color": "#323232"
+      }
     }
   },
   "order": [
@@ -443,8 +397,7 @@
     "9c57e873-c7e4-425f-97ec-e6f868960562",
     "featured_collection",
     "16b09182-830a-4e76-8f88-87f69804b648",
-    "16768865603482c658",
     "ed1c61fc-2b57-4d30-93ac-41b8b63d4f93",
-    "89b3b3ee-254b-441c-bf6c-5f8a3b2094ad"
+    "8ff49248-d52f-4984-baf4-239fc639ff4a"
   ]
 }

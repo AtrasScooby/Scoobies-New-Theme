@@ -81,9 +81,25 @@
       </span>
     </small>
   </div>
+  {%- if show_discount and compare_at_price > price -%}
+
+    {% comment %} <li class="product-page--pricing--discount">
+      <span class="variant-percentage-wrapper">
+        -<span class="variant-percentage" v-text="((variant.compare_at_price - variant.price) / variant.compare_at_price * 100).toFixed(0) + '%'">
+          {% assign discount_amount = compare_at_price | minus: price %}
+          {% assign discount_percentage = discount_amount | divided_by: compare_at_price | times: 100.0 %}
+          {{ discount_percentage | money_without_currency | remove: '.0' }}
+          %
+        </span>
+        Off | You Save ({{ discount_amount | money }}
+        )
+      </span>
+    </li> {% endcomment %}
+
+  {%- endif -%}
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
+      -{{ compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}% OFF
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

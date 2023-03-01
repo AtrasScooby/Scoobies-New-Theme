@@ -341,7 +341,16 @@
               </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                {%- render 'price', product: product, use_variant: true, show_badges: true, show_discount: true, price_class: 'price--large' -%}
+              </div>
+              <div>
+                
+                <li class="product-page--pricing--discount">
+                  <span class="variant-percentage-wrapper">
+                     You Save ({{ product.compare_at_price | minus: product.price | money }}
+                    )
+                  </span>
+                </li>
               </div>
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
@@ -383,14 +392,11 @@
                       {% render 'icon-caret' %}
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                      {{ block.settings.content }}
-                      {% assign product_features = block.settings.content | split: '|' %}
-                             <ul>
-                               {% for feature in product_features %}
-                               <li>{{ feature }}</li>
-                                {% endfor %}
-                             </ul>
-                      {{ block.settings.page.content }}
+                      <ul>
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      </ul>
+                      
                     </div>
                   </details>
                 </div>
@@ -1024,6 +1030,11 @@
       </div>
     {%- endif -%}
   </div>
+  {% comment %} <div class="product_buy_button_wrapper">
+    <button>Add to Cart</button>
+
+    <button>Buy Now</button>
+  </div> {% endcomment %}
   <input id="product_id" style="display: none;" value="{{product.id}}" disabled>
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div

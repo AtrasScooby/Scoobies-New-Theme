@@ -42,30 +42,12 @@
           "type": "description",
           "settings": {}
         },
-        "1d605000-47cd-41d9-94d8-b0855978324c": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Synopsis",
-            "icon": "eye",
-            "content": "<p>{{ product.metafields.custom.synopsis | metafield_tag }}<\/p>",
-            "page": ""
-          }
-        },
-        "d5627420-c710-4ca8-9b67-e289ab136c30": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Description",
-            "icon": "price_tag",
-            "content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}<\/p>",
-            "page": ""
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "<p>{{ product.metafields.custom.materials.value }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -74,7 +56,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "<p><strong>Shipping<\/strong><\/p><p>Delivery in 2-8 business days.<\/p><p><\/p><p><strong>Exchange and Return<\/strong><\/p><ul><li>Place exchange order request within 7 days of receiving a product.<\/li><li>Initiate exchange if you receive damaged, defective, different product than what you ordered, or product with missing part\/s.<\/li><li>Items with original tags, labels, and Intact Packaging ( that are in sellable condition) shall be eligible for exchange.<\/li><li>Used, altered, blister packs, tampered serial numbers, or Items on sale are not eligible for exchange.<\/li><li>The exchange must be sent by the customer to our online store via post or courier service and share the tracking details with our Customer Support team over email or WhatsApp at <a href=\"tel:+919717359930\">9717359930<\/a> or <a href=\"mailto:contact@scoobies.co.in\">contact@scoobies.co.in<\/a>.<\/li><li>The new Product shall be shipped out after the quality check of the exchanged product (Once we receive the product dispatched by the customer in the online store ) within 7-14 working days.<\/li><\/ul><p><\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -83,7 +65,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "<p>{{ product.metafields.custom.dimesnions | metafield_tag }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -92,7 +74,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "<p>{{ product.metafields.custom.care_instructions | metafield_tag }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -112,8 +94,6 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "1d605000-47cd-41d9-94d8-b0855978324c",
-        "d5627420-c710-4ca8-9b67-e289ab136c30",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
